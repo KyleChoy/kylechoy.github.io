@@ -21,6 +21,7 @@
     <title>Windows 下使用 Github 搭建免费个人博客</title>
     <url>/2020/04/13/Windows-%E4%B8%8B%E4%BD%BF%E7%94%A8-Github-%E6%90%AD%E5%BB%BA%E5%85%8D%E8%B4%B9%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</url>
     <content><![CDATA[<h3 id="Hexo-简介"><a href="#Hexo-简介" class="headerlink" title="Hexo 简介"></a>Hexo 简介</h3><p>Hexo是一款基于Node.js的快速、简洁且高效的博客框架，依赖少易于安装使用，可以方便的生成静态网页托管在 GitHub 上，支持 Markdown。</p>
+<a id="more"></a>
 <h3 id="一、安装相关软件"><a href="#一、安装相关软件" class="headerlink" title="一、安装相关软件"></a>一、安装相关软件</h3><h4 id="1-Node-js"><a href="#1-Node-js" class="headerlink" title="1. Node.js"></a>1. <a href="https://nodejs.org/en/download/" target="_blank" rel="noopener">Node.js</a></h4><p>若访问缓慢可以前往 <a href="https://npm.taobao.org/mirrors/node" target="_blank" rel="noopener">淘宝 Node.js 镜像</a> 下载</p>
 <h4 id="2-Git"><a href="#2-Git" class="headerlink" title="2. Git"></a>2. <a href="https://git-scm.com/download/win" target="_blank" rel="noopener">Git</a></h4><p>若遇到下载问题可以 <a href="https://ww.lanzous.com/b00zedhte" target="_blank" rel="noopener">从蓝奏云下载</a></p>
 <h4 id="3-Hexo"><a href="#3-Hexo" class="headerlink" title="3. Hexo"></a>3. Hexo</h4><p>新建一个文件夹作为博客的目录，在文件管理器空白处 <code>右键</code> - <code>Git Bash Here</code> ，输入以下命令：</p>
@@ -44,9 +45,7 @@
 </ul>
 <h5 id="创建-SSH-密钥："><a href="#创建-SSH-密钥：" class="headerlink" title="创建 SSH 密钥："></a>创建 SSH 密钥：</h5><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">"your@email.com"</span></span><br></pre></td></tr></table></figure>
 <p>一路回车即可，完成后会提示生成文件的位置，以文本的方式打开 <code>id_rsa.pub</code> ，复制里面所有内容。</p>
-<h5 id="把密钥添加到-Github："><a href="#把密钥添加到-Github：" class="headerlink" title="把密钥添加到 Github："></a>把密钥添加到 Github：</h5><p> 进入 <code>Github -&gt; 点击头像-&gt; Settings -&gt; SSH and GPG keys</code><br> 点击 <code>New SSH Key</code>，把复制的内容全部粘贴进去</p>
-<p>[^ssh，简单来讲，就是一个秘钥，其中，id_rsa是你这台电脑的私人秘钥，不能给别人看的，id_rsa.pub是公共秘钥，可以随便给别人看。把这个公钥放在GitHub上，这样当你链接GitHub自己的账户时，它就会根据公钥匹配你的私钥，当能够相互匹配时，才能够顺利的通过git上传你的文件到GitHub上。]: 版权声明：本文为CSDN博主「zjufangzh」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。</p>
-<p>tbc……</p>
+<h5 id="把密钥添加到-Github："><a href="#把密钥添加到-Github：" class="headerlink" title="把密钥添加到 Github："></a>把密钥添加到 Github：</h5><p> 进入 <code>Github -&gt; 点击头像-&gt; Settings -&gt; SSH and GPG keys</code><br> 点击 <code>New SSH Key</code>，把复制的内容全部粘贴进去<br>tbc……</p>
 <hr>
 <p>参考资料：</p>
 <p><a href="https://hexo.io/zh-cn/docs/index.html" target="_blank" rel="noopener">Hexo官方文档</a><br><a href="https://blog.csdn.net/sinat_37781304/article/details/82729029" target="_blank" rel="noopener">hexo史上最全搭建教程</a></p>
