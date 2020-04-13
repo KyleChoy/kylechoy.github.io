@@ -3,7 +3,11 @@
   <entry>
     <title>我的Hexo博客</title>
     <url>/2020/04/13/%E6%88%91%E7%9A%84Hexo%E5%8D%9A%E5%AE%A2/</url>
-    <content><![CDATA[]]></content>
+    <content><![CDATA[<p>##Hello<br>这里是利用 Github Pages生成的博客网站，由 Hexo 驱动</p>
+]]></content>
+      <tags>
+        <tag>meta</tag>
+      </tags>
   </entry>
   <entry>
     <title>Hello World</title>
