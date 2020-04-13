@@ -9,6 +9,7 @@
 
 <h2 id="More-Info"><a href="#More-Info" class="headerlink" title="More Info"></a>More Info</h2><p>其实我还有一个基于 WordPress 搭建的博客网站，但是前段时间发现利用 Github Pages 也可以很方便的搭建博客网址，便试着搭建了这个网站。目前看来，除了管理不方便、国内访问速度慢之外，几乎没有问题。</p>
 <p><strong>Ps：GitHhub Pages 支持 MarkDown ，适合写“硬核”文章，而且还有 SSL 加密，最重要的是免费！确实香！</strong> 🤩</p>
+<p>这是一个git同步测试</p>
 ]]></content>
       <categories>
         <category>关于</category>
