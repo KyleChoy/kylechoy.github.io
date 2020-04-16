@@ -41,7 +41,7 @@
 </li>
 <li><p><code>Repository name</code> 填入 <code>xxx.github.io</code> </p>
 </li>
-<li><p>选择 <code>Creat Respository</code><br>注意：xxx可以换为其他字符，但是 <strong>.github.io</strong> 不能更改</p>
+<li><p>选择 <code>Creat Respository</code><br>注意：xxx可以换为其他字符，但是 <strong>.github.io</strong> 不能更改<br>&emsp;</p>
 <h4 id="2-生成SSH密钥并添加到GitHub"><a href="#2-生成SSH密钥并添加到GitHub" class="headerlink" title="2. 生成SSH密钥并添加到GitHub"></a>2. 生成SSH密钥并添加到GitHub</h4></li>
 <li><p>返回 Git Bash，输入：</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git config --global user.name <span class="string">"yourname"</span></span><br><span class="line">git config --global user.email <span class="string">"your@emial.com"</span></span><br></pre></td></tr></table></figure>
@@ -51,19 +51,19 @@
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">"your@email.com"</span></span><br></pre></td></tr></table></figure>
 <p>&emsp;完成后会提示生成文件的位置，以文本的方式打开 <code>id_rsa.pub</code> ，复制里面所有内容。</p>
 </li>
-<li><p>把密钥添加到 Github：<br>进入 <code>Github -&gt; 点击头像-&gt; Settings -&gt; SSH and GPG keys</code><br>点击 <code>New SSH Key</code>，把复制的内容全部粘贴进去</p>
+<li><p>把密钥添加到 Github：<br>进入 <code>Github -&gt; 点击头像-&gt; Settings -&gt; SSH and GPG keys</code><br>点击 <code>New SSH Key</code>，把复制的内容全部粘贴进去<br>&emsp;</p>
+<h4 id="3-将-Hexo-部署到GitHub"><a href="#3-将-Hexo-部署到GitHub" class="headerlink" title="3. 将 Hexo 部署到GitHub"></a>3. 将 Hexo 部署到GitHub</h4></li>
+<li><p>安装 deploy-git</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure></li>
+<li><p>修改站点配置文件</p>
 </li>
-</ul>
-<h4 id="3-将-Hexo-部署到GitHub"><a href="#3-将-Hexo-部署到GitHub" class="headerlink" title="3. 将 Hexo 部署到GitHub"></a>3. 将 Hexo 部署到GitHub</h4><ul>
-<li>安装 deploy-git<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure></li>
-<li>修改站点配置文件</li>
 </ul>
 <p>&emsp;打开网站根目录下 <code>_config.yml</code> ，修改最后的内容：</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line">  repo: git@github.com:UserName/name.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
-<p>&emsp;其中，第二行的链接替换为：<code>Github -&gt; 仓库页面 -&gt; Clone or Download -&gt; Use SSH -&gt; 文本框内容</code></p>
+<p>&emsp;其中，<code>repo</code> 后的链接替换为：<code>Github -&gt; 仓库页面 -&gt; Clone or Download -&gt; Use SSH -&gt; 文本框内容</code></p>
 <ul>
 <li>部署<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo generate</span><br><span class="line">hexo deploy</span><br></pre></td></tr></table></figure>
-&emsp;其中 <code>generate</code> 和 <code>deploy</code> 可以用 <code>g</code> 和 <code>d</code> 代替<h4 id="4-查看网站"><a href="#4-查看网站" class="headerlink" title="4. 查看网站"></a>4. 查看网站</h4>&emsp;稍等片刻后，浏览器进入<code>xxx.github.io</code>就可以看到自己的网站了。<br>（xxx为之前自己创建时填入的名字）</li>
+&emsp;其中 <code>generate</code> 和 <code>deploy</code> 可以用 <code>g</code> 和 <code>d</code> 代替<br>&emsp;<h4 id="4-查看网站"><a href="#4-查看网站" class="headerlink" title="4. 查看网站"></a>4. 查看网站</h4>&emsp;稍等片刻后，浏览器进入<code>xxx.github.io</code>就可以看到自己的网站了。<br>（xxx为之前自己创建时填入的名字）</li>
 </ul>
 <hr>
 <p>参考资料：<br>&emsp;<a href="https://hexo.io/zh-cn/docs/index.html" target="_blank" rel="noopener">Hexo官方文档</a><br>&emsp;<a href="https://blog.csdn.net/sinat_37781304/article/details/82729029" target="_blank" rel="noopener">hexo史上最全搭建教程</a></p>
