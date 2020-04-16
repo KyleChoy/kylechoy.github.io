@@ -60,12 +60,6 @@
       </tags>
   </entry>
   <entry>
-    <title>test</title>
-    <url>/2020/04/16/test/</url>
-    <content><![CDATA[<p><img src="/2020/04/16/test/2020-04-16.png" alt="图片"></p>
-]]></content>
-  </entry>
-  <entry>
     <title>我的Hexo博客</title>
     <url>/2020/04/13/%E6%88%91%E7%9A%84Hexo%E5%8D%9A%E5%AE%A2/</url>
     <content><![CDATA[<h2 id="Hello-World"><a href="#Hello-World" class="headerlink" title="Hello World"></a>Hello World</h2><p>这里是利用 <strong>Github Pages</strong> 生成的博客网站，由 <strong>Hexo</strong> 驱动，采用 <strong>Next</strong> 主题。</p>
