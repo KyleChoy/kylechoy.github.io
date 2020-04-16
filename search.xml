@@ -37,12 +37,14 @@
 <p>&emsp;此时用浏览器打开 <code>http://localhost:4000</code>，就可以看到你的网站啦！</p>
 <h3 id="二、将-Hexo-部署到-GitHub-Pages"><a href="#二、将-Hexo-部署到-GitHub-Pages" class="headerlink" title="二、将 Hexo 部署到 GitHub Pages"></a>二、将 Hexo 部署到 GitHub Pages</h3><h4 id="1-创建个人仓库"><a href="#1-创建个人仓库" class="headerlink" title="1. 创建个人仓库"></a>1. 创建个人仓库</h4><p>进入 <a href="https://github.com/" target="_blank" rel="noopener">Github.com</a> ，登录后选择：</p>
 <ul>
-<li><code>New Repositorie（新建仓库）</code></li>
-<li><code>Repository name</code> 填入 <code>xxx.github.io</code> </li>
-<li>选择 <code>Creat Respository</code></li>
-<li>注意：xxx可以换为其他字符，但是 <strong>.github.io</strong> 不能更改*</li>
-</ul>
-<h4 id="2-生成SSH密钥并添加到GitHub"><a href="#2-生成SSH密钥并添加到GitHub" class="headerlink" title="2. 生成SSH密钥并添加到GitHub"></a>2. 生成SSH密钥并添加到GitHub</h4><ul>
+<li><p><code>New Repositorie（新建仓库）</code></p>
+</li>
+<li><p><code>Repository name</code> 填入 <code>xxx.github.io</code> </p>
+</li>
+<li><p>选择 <code>Creat Respository</code></p>
+</li>
+<li><p>注意：xxx可以换为其他字符，但是 <strong>.github.io</strong> 不能更改*</p>
+<h4 id="2-生成SSH密钥并添加到GitHub"><a href="#2-生成SSH密钥并添加到GitHub" class="headerlink" title="2. 生成SSH密钥并添加到GitHub"></a>2. 生成SSH密钥并添加到GitHub</h4></li>
 <li><p>返回 Git Bash，输入：</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git config --global user.name <span class="string">"yourname"</span></span><br><span class="line">git config --global user.email <span class="string">"your@emial.com"</span></span><br></pre></td></tr></table></figure>
 <p>&emsp;输入自己在 Github 的用户名（<strong>区分大小写</strong>）和邮箱</p>
