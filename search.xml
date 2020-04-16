@@ -76,4 +76,10 @@
         <tag>Blog</tag>
       </tags>
   </entry>
+  <entry>
+    <title>test</title>
+    <url>/2020/04/16/test/</url>
+    <content><![CDATA[<p><img src="/.com//2020-04-16.png" alt="图片"></p>
+]]></content>
+  </entry>
 </search>
