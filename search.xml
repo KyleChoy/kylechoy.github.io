@@ -22,7 +22,7 @@
 <ul>
 <li><code>New Repositorie（新建仓库）</code></li>
 <li><code>Repository name</code> 填入 <code>xxx.github.io</code> </li>
-<li>选择 <code>Creat Respository</code><br>注意：xxx可以换为其他字符，但是 <strong>.github.io</strong> 不能更改<br>&emsp;</li>
+<li>选择 <code>Creat Respository</code><br>注意：xxx可以换为其他字符，但是 <strong>.github.io</strong> 不能更改</li>
 </ul>
 <h4 id="2-生成SSH密钥并添加到GitHub"><a href="#2-生成SSH密钥并添加到GitHub" class="headerlink" title="2. 生成SSH密钥并添加到GitHub"></a>2. 生成SSH密钥并添加到GitHub</h4><ul>
 <li><p>返回 Git Bash，输入：</p>
@@ -33,7 +33,7 @@
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">"your@email.com"</span></span><br></pre></td></tr></table></figure>
 <p>&emsp;完成后会提示生成文件的位置，以文本的方式打开 <code>id_rsa.pub</code> ，复制里面所有内容。</p>
 </li>
-<li><p>把密钥添加到 Github：<br>进入 <code>Github -&gt; 点击头像-&gt; Settings -&gt; SSH and GPG keys</code><br>点击 <code>New SSH Key</code>，把复制的内容全部粘贴进去<br>&emsp;</p>
+<li><p>把密钥添加到 Github：<br>进入 <code>Github -&gt; 点击头像-&gt; Settings -&gt; SSH and GPG keys</code><br>点击 <code>New SSH Key</code>，把复制的内容全部粘贴进去</p>
 </li>
 </ul>
 <h4 id="3-将-Hexo-部署到GitHub"><a href="#3-将-Hexo-部署到GitHub" class="headerlink" title="3. 将 Hexo 部署到GitHub"></a>3. 将 Hexo 部署到GitHub</h4><ul>
@@ -45,7 +45,7 @@
 <p>&emsp;其中，<code>repo</code> 后的链接替换为：<code>Github -&gt; 仓库页面 -&gt; Clone or Download -&gt; Use SSH -&gt; 文本框内容</code></p>
 <ul>
 <li>部署<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo generate</span><br><span class="line">hexo deploy</span><br></pre></td></tr></table></figure>
-&emsp;其中 <code>generate</code> 和 <code>deploy</code> 可以用 <code>g</code> 和 <code>d</code> 代替<br>&emsp;</li>
+&emsp;其中 <code>generate</code> 和 <code>deploy</code> 可以用 <code>g</code> 和 <code>d</code> 代替</li>
 </ul>
 <h4 id="4-查看网站"><a href="#4-查看网站" class="headerlink" title="4. 查看网站"></a>4. 查看网站</h4><p>&emsp;稍等片刻后，浏览器进入<code>xxx.github.io</code>就可以看到自己的网站了。<br>（xxx为之前自己创建时填入的名字）</p>
 <hr>
