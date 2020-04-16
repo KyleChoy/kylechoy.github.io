@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>我的Hexo博客</title>
+    <url>/2020/04/13/%E6%88%91%E7%9A%84Hexo%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<h2 id="Hello-World"><a href="#Hello-World" class="headerlink" title="Hello World"></a>Hello World</h2><p>这里是利用 <strong>Github Pages</strong> 生成的博客网站，由 <strong>Hexo</strong> 驱动，采用 <strong>Next</strong> 主题。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">print(<span class="string">"Hello World!"</span>)</span><br></pre></td></tr></table></figure>
+<a id="more"></a>
+
+<h2 id="More-Info"><a href="#More-Info" class="headerlink" title="More Info"></a>More Info</h2><p>其实我还有一个基于 WordPress 搭建的博客网站，但是前段时间发现利用 Github Pages 也可以很方便的搭建博客网址，便试着搭建了这个网站。目前看来，除了管理不方便、国内访问速度慢之外，几乎没有问题。</p>
+<p><strong>Ps：GitHhub Pages 支持 MarkDown ，适合写“硬核”文章，而且还有 SSL 加密，最重要的是免费！确实香！</strong> 🤩</p>
+]]></content>
+      <categories>
+        <category>关于</category>
+      </categories>
+      <tags>
+        <tag>META</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Windows 下使用 Github 搭建免费个人博客</title>
     <url>/2020/04/13/Windows-%E4%B8%8B%E4%BD%BF%E7%94%A8-Github-%E6%90%AD%E5%BB%BA%E5%85%8D%E8%B4%B9%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</url>
     <content><![CDATA[<h3 id="Hexo-简介"><a href="#Hexo-简介" class="headerlink" title="Hexo 简介"></a>Hexo 简介</h3><p>&emsp;Hexo是一款基于Node.js的快速、简洁且高效的博客框架，依赖少易于安装使用，可以方便的生成静态网页托管在 GitHub 上，支持 Markdown。</p>
@@ -57,23 +74,6 @@
       <tags>
         <tag>Git</tag>
         <tag>Blog</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>我的Hexo博客</title>
-    <url>/2020/04/13/%E6%88%91%E7%9A%84Hexo%E5%8D%9A%E5%AE%A2/</url>
-    <content><![CDATA[<h2 id="Hello-World"><a href="#Hello-World" class="headerlink" title="Hello World"></a>Hello World</h2><p>这里是利用 <strong>Github Pages</strong> 生成的博客网站，由 <strong>Hexo</strong> 驱动，采用 <strong>Next</strong> 主题。</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">print(<span class="string">"Hello World!"</span>)</span><br></pre></td></tr></table></figure>
-<a id="more"></a>
-
-<h2 id="More-Info"><a href="#More-Info" class="headerlink" title="More Info"></a>More Info</h2><p>其实我还有一个基于 WordPress 搭建的博客网站，但是前段时间发现利用 Github Pages 也可以很方便的搭建博客网址，便试着搭建了这个网站。目前看来，除了管理不方便、国内访问速度慢之外，几乎没有问题。</p>
-<p><strong>Ps：GitHhub Pages 支持 MarkDown ，适合写“硬核”文章，而且还有 SSL 加密，最重要的是免费！确实香！</strong> 🤩</p>
-]]></content>
-      <categories>
-        <category>关于</category>
-      </categories>
-      <tags>
-        <tag>META</tag>
       </tags>
   </entry>
 </search>
