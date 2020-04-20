@@ -17,7 +17,7 @@
 <tbody><tr>
 <td><font color="red">4.20 - 4.24</font></td>
 <td><font color="red">课时7 ~ 课时18</font></td>
-<td><font color="red">关键帧、蒙版、字幕<sup><a href="#1">[1]</a></sup></font></td>
+<td><font color="red">关键帧<sup><a href="#1">[1]</a></sup>、蒙版、字幕<sup><a href="#2">[2]</a></sup></font></td>
 </tr>
 <tr>
 <td>4.18 - 4.19</td>
@@ -28,6 +28,10 @@
 <hr>
 <p><span id="1"></span></p>
 <h4 id="注解"><a href="#注解" class="headerlink" title="注解"></a>注解</h4><ol>
+<li>关键帧的使用十分重要，需要好好掌握。</li>
+</ol>
+<p><span id="2"></span></p>
+<ol start="2">
 <li>这里的字幕在<strong>Pr2018</strong>以上称为旧版标题，通过 <code>新建-旧版标题</code> 制作字幕，对比起新的文字工具（课时122介绍），功能更加强大，但是操作比较不方便。<br>&nbsp;<blockquote>
 <p>个人见解：<br>制作复杂字幕（如渐变色字幕时）使用旧版标题；<br>制作简单字幕（单纯的描边、背景色时）使用新版文字工具。</p>
 </blockquote>
