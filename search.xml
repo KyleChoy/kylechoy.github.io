@@ -42,7 +42,7 @@
 </ul>
 <p>打开网站根目录下 <code>_config.yml</code> ，修改最后的内容：</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line">  repo: git@github.com:UserName/name.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
-<p>其中，<code>repo</code> 后的链接替换为：<code>Github -&gt; 仓库页面 -&gt; Clone or Download -&gt; Use SSH -&gt; 文本框内容</code>，如下图：<br><img src="https://kylechoy.top/wp-content/uploads/2020/04/2020-04-16.png" alt></p>
+<p>其中，<code>repo</code> 后的链接替换为：<code>Github -&gt; 仓库页面 -&gt; Clone or Download -&gt; Use SSH -&gt; 文本框内容</code>，如下图：<br><img src="/Windows-%E4%B8%8B%E4%BD%BF%E7%94%A8-Github-%E6%90%AD%E5%BB%BA%E5%85%8D%E8%B4%B9%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2.htm/_posts/Windows-%E4%B8%8B%E4%BD%BF%E7%94%A8-Github-%E6%90%AD%E5%BB%BA%E5%85%8D%E8%B4%B9%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/2020-04-16.png" alt></p>
 <ul>
 <li>部署<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo generate</span><br><span class="line">hexo deploy</span><br></pre></td></tr></table></figure>
 其中 <code>generate</code> 和 <code>deploy</code> 可以用 <code>g</code> 和 <code>d</code> 代替</li>
