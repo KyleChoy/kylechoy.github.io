@@ -81,6 +81,7 @@
     <title>Premiere Pro 学习指引</title>
     <url>/2020/04/20/Premiere-Pro-%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%BC%95/</url>
     <content><![CDATA[<h4 id="写在开头"><a href="#写在开头" class="headerlink" title="写在开头"></a>写在开头</h4><p>这篇文章将安排每周视频剪辑的学习内容。<br>更新时间：<strong>每周五例会后；每周日晚上</strong>。</p>
+<a id="more"></a>
 <h4 id="时间表"><a href="#时间表" class="headerlink" title="时间表"></a>时间表</h4><table>
 <thead>
 <tr>
@@ -101,9 +102,9 @@
 </tr>
 </tbody></table>
 <hr>
-<h4 id="注解"><a href="#注解" class="headerlink" title="注解"></a>注解</h4><p><span id="1"></span></p>
-<ol>
-<li>这里的字幕在<strong>Pr2018</strong>以上称为旧版标题，通过 <code>新建-旧版标题</code> 制作字幕，对比起新的文字工具（课时122介绍），功能更加强大，但是操作比较不方便。</li>
+<p><span id="1"></span></p>
+<h4 id="注解"><a href="#注解" class="headerlink" title="注解"></a>注解</h4><ol>
+<li>这里的字幕在<strong>Pr2018</strong>以上称为旧版标题，通过 <code>新建-旧版标题</code> 制作字幕，对比起新的文字工具（课时122介绍），功能更加强大，但是操作比较不方便。<br> ```<br> 个人见解：<br> 制作复杂字幕（如渐变色字幕时）使用旧版标题；<br> 制作简单字幕（单纯的描边、背景色时）使用新版文字工具。</li>
 </ol>
 ]]></content>
       <categories>
