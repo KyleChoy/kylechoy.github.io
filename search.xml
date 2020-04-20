@@ -1,8 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Premiere Pro 学习指引</title>
+    <url>/PR.html</url>
+    <content><![CDATA[<h4 id="写在开头"><a href="#写在开头" class="headerlink" title="写在开头"></a>写在开头</h4><p>这篇文章将安排每周视频剪辑的学习内容。<br>更新时间：<strong>每周五例会后；每周日晚上</strong>。</p>
+<a id="more"></a>
+<h4 id="时间表"><a href="#时间表" class="headerlink" title="时间表"></a>时间表</h4><table>
+<thead>
+<tr>
+<th>时间</th>
+<th>学习内容</th>
+<th>重点内容</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><font color="red">4.20 - 4.24</font></td>
+<td><font color="red">课时7 ~ 课时18</font></td>
+<td><font color="red">关键帧、蒙版、字幕<sup><a href="#1">[1]</a></sup></font></td>
+</tr>
+<tr>
+<td>4.18 - 4.19</td>
+<td>课时1 ~ 课时6</td>
+<td>初识软件</td>
+</tr>
+</tbody></table>
+<hr>
+<p><span id="1"></span></p>
+<h4 id="注解"><a href="#注解" class="headerlink" title="注解"></a>注解</h4><ol>
+<li>这里的字幕在<strong>Pr2018</strong>以上称为旧版标题，通过 <code>新建-旧版标题</code> 制作字幕，对比起新的文字工具（课时122介绍），功能更加强大，但是操作比较不方便。<br>&nbsp;<blockquote>
+<p>个人见解：<br>制作复杂字幕（如渐变色字幕时）使用旧版标题；<br>制作简单字幕（单纯的描边、背景色时）使用新版文字工具。</p>
+</blockquote>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>Premiere Pro</tag>
+        <tag>剪辑</tag>
+        <tag>学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>我的Hexo博客</title>
+    <url>/%E6%88%91%E7%9A%84Hexo%E5%8D%9A%E5%AE%A2.html</url>
+    <content><![CDATA[<h2 id="Hello-World"><a href="#Hello-World" class="headerlink" title="Hello World"></a>Hello World</h2><p>这里是利用 <strong>Github Pages</strong> 生成的博客网站，由 <strong>Hexo</strong> 驱动，采用 <strong>Next</strong> 主题。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">print(<span class="string">"Hello World!"</span>)</span><br></pre></td></tr></table></figure>
+<a id="more"></a>
+
+<h2 id="More-Info"><a href="#More-Info" class="headerlink" title="More Info"></a>More Info</h2><p>其实我还有一个基于 WordPress 搭建的博客网站，但是前段时间发现利用 Github Pages 也可以很方便的搭建博客网址，便试着搭建了这个网站。目前看来，除了管理不方便、国内访问速度慢之外，几乎没有问题。</p>
+<p><strong>Ps：GitHhub Pages 支持 MarkDown ，适合写“硬核”文章，而且还有 SSL 加密，最重要的是免费！确实香！</strong> 🤩</p>
+]]></content>
+      <categories>
+        <category>关于</category>
+      </categories>
+      <tags>
+        <tag>META</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Windows 下使用 Github 搭建免费个人博客</title>
-    <url>/2020/04/13/Windows-%E4%B8%8B%E4%BD%BF%E7%94%A8-Github-%E6%90%AD%E5%BB%BA%E5%85%8D%E8%B4%B9%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</url>
+    <url>/Windows-%E4%B8%8B%E4%BD%BF%E7%94%A8-Github-%E6%90%AD%E5%BB%BA%E5%85%8D%E8%B4%B9%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2.html</url>
     <content><![CDATA[<h3 id="Hexo-简介"><a href="#Hexo-简介" class="headerlink" title="Hexo 简介"></a>Hexo 简介</h3><p>Hexo是一款基于Node.js的快速、简洁且高效的博客框架，依赖少易于安装使用，可以方便的生成静态网页托管在 GitHub 上，支持 Markdown。</p>
 <a id="more"></a>
 <h3 id="一、安装相关软件"><a href="#一、安装相关软件" class="headerlink" title="一、安装相关软件"></a>一、安装相关软件</h3><h4 id="1-Node-js"><a href="#1-Node-js" class="headerlink" title="1. Node.js"></a>1. <a href="https://nodejs.org/en/download/" target="_blank" rel="noopener">Node.js</a></h4><p>若访问缓慢可以前往 <a href="https://npm.taobao.org/mirrors/node" target="_blank" rel="noopener">淘宝 Node.js 镜像</a> 下载</p>
@@ -42,7 +101,7 @@
 </ul>
 <p>打开网站根目录下 <code>_config.yml</code> ，修改最后的内容：</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line">  repo: git@github.com:UserName/name.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
-<p>其中，<code>repo</code> 后的链接替换为：<code>Github -&gt; 仓库页面 -&gt; Clone or Download -&gt; Use SSH -&gt; 文本框内容</code>，如下图：<br><img src="/2020/04/13/Windows-%E4%B8%8B%E4%BD%BF%E7%94%A8-Github-%E6%90%AD%E5%BB%BA%E5%85%8D%E8%B4%B9%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/2020-04-16.png" alt></p>
+<p>其中，<code>repo</code> 后的链接替换为：<code>Github -&gt; 仓库页面 -&gt; Clone or Download -&gt; Use SSH -&gt; 文本框内容</code>，如下图：<br><img src="/Windows-%E4%B8%8B%E4%BD%BF%E7%94%A8-Github-%E6%90%AD%E5%BB%BA%E5%85%8D%E8%B4%B9%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2.htm/2020-04-16.png" alt></p>
 <ul>
 <li>部署<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo generate</span><br><span class="line">hexo deploy</span><br></pre></td></tr></table></figure>
 其中 <code>generate</code> 和 <code>deploy</code> 可以用 <code>g</code> 和 <code>d</code> 代替</li>
@@ -55,68 +114,9 @@
         <category>网站</category>
       </categories>
       <tags>
-        <tag>Blog</tag>
         <tag>Hexo</tag>
         <tag>Github</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>我的Hexo博客</title>
-    <url>/2020/04/13/%E6%88%91%E7%9A%84Hexo%E5%8D%9A%E5%AE%A2/</url>
-    <content><![CDATA[<h2 id="Hello-World"><a href="#Hello-World" class="headerlink" title="Hello World"></a>Hello World</h2><p>这里是利用 <strong>Github Pages</strong> 生成的博客网站，由 <strong>Hexo</strong> 驱动，采用 <strong>Next</strong> 主题。</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">print(<span class="string">"Hello World!"</span>)</span><br></pre></td></tr></table></figure>
-<a id="more"></a>
-
-<h2 id="More-Info"><a href="#More-Info" class="headerlink" title="More Info"></a>More Info</h2><p>其实我还有一个基于 WordPress 搭建的博客网站，但是前段时间发现利用 Github Pages 也可以很方便的搭建博客网址，便试着搭建了这个网站。目前看来，除了管理不方便、国内访问速度慢之外，几乎没有问题。</p>
-<p><strong>Ps：GitHhub Pages 支持 MarkDown ，适合写“硬核”文章，而且还有 SSL 加密，最重要的是免费！确实香！</strong> 🤩</p>
-]]></content>
-      <categories>
-        <category>关于</category>
-      </categories>
-      <tags>
-        <tag>META</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Premiere Pro 学习指引</title>
-    <url>/2020/04/20/Premiere-Pro-%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%BC%95/</url>
-    <content><![CDATA[<h4 id="写在开头"><a href="#写在开头" class="headerlink" title="写在开头"></a>写在开头</h4><p>这篇文章将安排每周视频剪辑的学习内容。<br>更新时间：<strong>每周五例会后；每周日晚上</strong>。</p>
-<a id="more"></a>
-<h4 id="时间表"><a href="#时间表" class="headerlink" title="时间表"></a>时间表</h4><table>
-<thead>
-<tr>
-<th>时间</th>
-<th>学习内容</th>
-<th>重点内容</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><font color="red">4.20 - 4.24</font></td>
-<td><font color="red">课时7 ~ 课时18</font></td>
-<td><font color="red">关键帧、蒙版、字幕<sup><a href="#1">[1]</a></sup></font></td>
-</tr>
-<tr>
-<td>4.18 - 4.19</td>
-<td>课时1 ~ 课时6</td>
-<td>初识软件</td>
-</tr>
-</tbody></table>
-<hr>
-<p><span id="1"></span></p>
-<h4 id="注解"><a href="#注解" class="headerlink" title="注解"></a>注解</h4><ol>
-<li>这里的字幕在<strong>Pr2018</strong>以上称为旧版标题，通过 <code>新建-旧版标题</code> 制作字幕，对比起新的文字工具（课时122介绍），功能更加强大，但是操作比较不方便。<br>&nbsp;<blockquote>
-<p>个人见解：<br>制作复杂字幕（如渐变色字幕时）使用旧版标题；<br>制作简单字幕（单纯的描边、背景色时）使用新版文字工具。</p>
-</blockquote>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>Premiere Pro</tag>
-        <tag>剪辑</tag>
-        <tag>学习</tag>
+        <tag>Blog</tag>
       </tags>
   </entry>
 </search>
