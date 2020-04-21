@@ -321,10 +321,11 @@
     
 
       <footer class="post-footer">
+          
           <div class="post-tags">
-              <a href="/tags/Hexo/" rel="tag"># Hexo</a>
-              <a href="/tags/Github/" rel="tag"># Github</a>
-              <a href="/tags/Blog/" rel="tag"># Blog</a>
+              <a href="/tags/Hexo/" rel="tag"><i class="fa fa-tag"></i> Hexo</a>
+              <a href="/tags/Github/" rel="tag"><i class="fa fa-tag"></i> Github</a>
+              <a href="/tags/Blog/" rel="tag"><i class="fa fa-tag"></i> Blog</a>
           </div>
 
         
@@ -399,7 +400,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Hexo-简介"><span class="nav-number">1.</span> <span class="nav-text">Hexo 简介</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#一、安装相关软件"><span class="nav-number">2.</span> <span class="nav-text">一、安装相关软件</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-Node-js"><span class="nav-number">2.1.</span> <span class="nav-text">1. Node.js</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-Git"><span class="nav-number">2.2.</span> <span class="nav-text">2. Git</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-Hexo"><span class="nav-number">2.3.</span> <span class="nav-text">3. Hexo</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#二、将-Hexo-部署到-GitHub-Pages"><span class="nav-number">3.</span> <span class="nav-text">二、将 Hexo 部署到 GitHub Pages</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-创建个人仓库"><span class="nav-number">3.1.</span> <span class="nav-text">1. 创建个人仓库</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-生成SSH密钥并添加到GitHub"><span class="nav-number">3.2.</span> <span class="nav-text">2. 生成SSH密钥并添加到GitHub</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-将-Hexo-部署到GitHub"><span class="nav-number">3.3.</span> <span class="nav-text">3. 将 Hexo 部署到GitHub</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-查看网站"><span class="nav-number">3.4.</span> <span class="nav-text">4. 查看网站</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Hexo-简介"><span class="nav-text">Hexo 简介</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#一、安装相关软件"><span class="nav-text">一、安装相关软件</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-Node-js"><span class="nav-text">1. Node.js</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-Git"><span class="nav-text">2. Git</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-Hexo"><span class="nav-text">3. Hexo</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#二、将-Hexo-部署到-GitHub-Pages"><span class="nav-text">二、将 Hexo 部署到 GitHub Pages</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-创建个人仓库"><span class="nav-text">1. 创建个人仓库</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-生成SSH密钥并添加到GitHub"><span class="nav-text">2. 生成SSH密钥并添加到GitHub</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-将-Hexo-部署到GitHub"><span class="nav-text">3. 将 Hexo 部署到GitHub</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-查看网站"><span class="nav-text">4. 查看网站</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -441,6 +442,16 @@
   </div>
 
 
+  <div class="links-of-blogroll motion-element">
+    <div class="links-of-blogroll-title"><i class="fa fa-link fa-fw"></i>
+      Links
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="https://kylechoy.top/" title="https:&#x2F;&#x2F;kylechoy.top" rel="noopener" target="_blank">菜头的基地</a>
+        </li>
+    </ul>
+  </div>
 
       </div>
         <div class="back-to-top motion-element">
@@ -583,6 +594,19 @@ window.addEventListener('pjax:success', () => {
 
 
 
+<script data-pjax>
+if (document.querySelectorAll('pre.mermaid').length) {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/mermaid@8/dist/mermaid.min.js', () => {
+    mermaid.initialize({
+      theme    : 'forest',
+      logLevel : 3,
+      flowchart: { curve     : 'linear' },
+      gantt    : { axisFormat: '%m/%d/%Y' },
+      sequence : { actorMargin: 50 }
+    });
+  }, window.mermaid);
+}
+</script>
 
 
     <div id="pjax">
