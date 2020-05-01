@@ -61,6 +61,11 @@
 </tr>
 </thead>
 <tbody><tr>
+<td>5.1 - 5.5</td>
+<td><a href="https://kylechoy.github.io/May-Day-Holiday.html">剪辑一个视频</a></td>
+<td>实操<sup><a href="#3">[3]</a></sup></td>
+</tr>
+<tr>
 <td><font color="red">4.20 - 4.24</font></td>
 <td><font color="red">课时7 ~ 课时18</font></td>
 <td><font color="red">关键帧<sup><a href="#1">[1]</a></sup>、蒙版、字幕<sup><a href="#2">[2]</a></sup></font></td>
@@ -78,10 +83,14 @@
 </ol>
 <p><span id="2"></span></p>
 <ol start="2">
-<li>字幕：这里的字幕在<strong>Pr2018</strong>以上称为旧版标题，通过 <code>新建-旧版标题</code> 制作字幕，对比起新的文字工具（课时122介绍），功能更加强大，但是操作比较不方便。<br>&nbsp;<blockquote>
+<li>字幕：这里的字幕在 <strong>Pr2018</strong> 以上称为旧版标题，通过 <code>新建-旧版标题</code> 制作字幕，对比起新的文字工具（课时122介绍），功能更加强大，但是操作比较不方便。<br>&nbsp;<blockquote>
 <p>个人见解：<br>制作复杂字幕（如渐变色字幕时）使用旧版标题；<br>制作简单字幕（单纯的描边、背景色时）使用新版文字工具。</p>
 </blockquote>
 </li>
+</ol>
+<p><span id="3"></span></p>
+<ol start="3">
+<li>实操：通过自己动手剪辑视频，来熟悉 PR 的相关操作，主要掌握：新建项目、素材的导入、新建序列、素材的剪辑、BGM 的使用、转场的使用、简单的调色、导出视频 ……</li>
 </ol>
 ]]></content>
       <categories>
