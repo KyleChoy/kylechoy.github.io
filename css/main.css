@@ -18,10 +18,10 @@
   --btn-default-hover-bg: #222;
   --btn-default-hover-color: #fff;
   --btn-default-hover-border-color: #222;
-  --highlight-background: #f6f6f6;
-  --highlight-foreground: #181818;
-  --highlight-gutter-background: #dfdfdf;
-  --highlight-gutter-foreground: #2e2e2e;
+  --highlight-background: #fafafa;
+  --highlight-foreground: #383a42;
+  --highlight-gutter-background: #e6e6e7;
+  --highlight-gutter-foreground: #4b4d54;
   color-scheme: light;
 }
 @media (prefers-color-scheme: dark) {
@@ -45,10 +45,10 @@
     --btn-default-hover-bg: #666;
     --btn-default-hover-color: #ccc;
     --btn-default-hover-border-color: #666;
-    --highlight-background: #1a1a1a;
-    --highlight-foreground: #ccc;
-    --highlight-gutter-background: #2b2b2b;
-    --highlight-gutter-foreground: #bababa;
+    --highlight-background: #282c34;
+    --highlight-foreground: #abb2bf;
+    --highlight-gutter-background: #353941;
+    --highlight-gutter-foreground: #9da4b1;
     color-scheme: dark;
   }
   img {
@@ -400,20 +400,20 @@ td {
   transform: rotate(-45deg);
 }
 /*!
-  Theme: iA Light
-  Author: iA Inc. (modified by aramisgithub)
+  Theme: One Light
+  Author: Daniel Pfeifer (http://github.com/purpleKarrot)
   License: ~ MIT (or more permissive) [via base16-schemes-source]
   Maintainer: @highlightjs/core-team
   Version: 2021.09.0
-*/pre code.hljs{display:block;overflow-x:auto;padding:1em}code.hljs{padding:3px 5px}.hljs{color:#181818;background:#f6f6f6}.hljs ::selection,.hljs::selection{background-color:#bde5f2;color:#181818}.hljs-comment{color:#898989}.hljs-tag{color:#767676}.hljs-operator,.hljs-punctuation,.hljs-subst{color:#181818}.hljs-operator{opacity:.7}.hljs-bullet,.hljs-deletion,.hljs-name,.hljs-selector-tag,.hljs-template-variable,.hljs-variable{color:#9c5a02}.hljs-attr,.hljs-link,.hljs-literal,.hljs-number,.hljs-symbol,.hljs-variable.constant_{color:#c43e18}.hljs-class .hljs-title,.hljs-title,.hljs-title.class_{color:#c48218}.hljs-strong{font-weight:700;color:#c48218}.hljs-addition,.hljs-code,.hljs-string,.hljs-title.class_.inherited__{color:#38781c}.hljs-built_in,.hljs-doctag,.hljs-keyword.hljs-atrule,.hljs-quote,.hljs-regexp{color:#2d6bb1}.hljs-attribute,.hljs-function .hljs-title,.hljs-section,.hljs-title.function_,.ruby .hljs-property{color:#48bac2}.diff .hljs-meta,.hljs-keyword,.hljs-template-tag,.hljs-type{color:#a94598}.hljs-emphasis{color:#a94598;font-style:italic}.hljs-meta,.hljs-meta .hljs-keyword,.hljs-meta .hljs-string{color:#8b6c37}.hljs-meta .hljs-keyword,.hljs-meta-keyword{font-weight:700}
+*/pre code.hljs{display:block;overflow-x:auto;padding:1em}code.hljs{padding:3px 5px}.hljs{color:#383a42;background:#fafafa}.hljs ::selection,.hljs::selection{background-color:#e5e5e6;color:#383a42}.hljs-comment{color:#a0a1a7}.hljs-tag{color:#696c77}.hljs-operator,.hljs-punctuation,.hljs-subst{color:#383a42}.hljs-operator{opacity:.7}.hljs-bullet,.hljs-deletion,.hljs-name,.hljs-selector-tag,.hljs-template-variable,.hljs-variable{color:#ca1243}.hljs-attr,.hljs-link,.hljs-literal,.hljs-number,.hljs-symbol,.hljs-variable.constant_{color:#d75f00}.hljs-class .hljs-title,.hljs-title,.hljs-title.class_{color:#c18401}.hljs-strong{font-weight:700;color:#c18401}.hljs-addition,.hljs-code,.hljs-string,.hljs-title.class_.inherited__{color:#50a14f}.hljs-built_in,.hljs-doctag,.hljs-keyword.hljs-atrule,.hljs-quote,.hljs-regexp{color:#0184bc}.hljs-attribute,.hljs-function .hljs-title,.hljs-section,.hljs-title.function_,.ruby .hljs-property{color:#4078f2}.diff .hljs-meta,.hljs-keyword,.hljs-template-tag,.hljs-type{color:#a626a4}.hljs-emphasis{color:#a626a4;font-style:italic}.hljs-meta,.hljs-meta .hljs-keyword,.hljs-meta .hljs-string{color:#986801}.hljs-meta .hljs-keyword,.hljs-meta-keyword{font-weight:700}
 @media (prefers-color-scheme: dark) {
 /*!
-  Theme: iA Dark
-  Author: iA Inc. (modified by aramisgithub)
+  Theme: OneDark
+  Author: Lalit Magant (http://github.com/tilal6991)
   License: ~ MIT (or more permissive) [via base16-schemes-source]
   Maintainer: @highlightjs/core-team
   Version: 2021.09.0
-*/pre code.hljs{display:block;overflow-x:auto;padding:1em}code.hljs{padding:3px 5px}.hljs{color:#ccc;background:#1a1a1a}.hljs ::selection,.hljs::selection{background-color:#1d414d;color:#ccc}.hljs-comment{color:#767676}.hljs-tag{color:#b8b8b8}.hljs-operator,.hljs-punctuation,.hljs-subst{color:#ccc}.hljs-operator{opacity:.7}.hljs-bullet,.hljs-deletion,.hljs-name,.hljs-selector-tag,.hljs-template-variable,.hljs-variable{color:#d88568}.hljs-attr,.hljs-link,.hljs-literal,.hljs-number,.hljs-symbol,.hljs-variable.constant_{color:#d86868}.hljs-class .hljs-title,.hljs-title,.hljs-title.class_{color:#b99353}.hljs-strong{font-weight:700;color:#b99353}.hljs-addition,.hljs-code,.hljs-string,.hljs-title.class_.inherited__{color:#83a471}.hljs-built_in,.hljs-doctag,.hljs-keyword.hljs-atrule,.hljs-quote,.hljs-regexp{color:#7c9cae}.hljs-attribute,.hljs-function .hljs-title,.hljs-section,.hljs-title.function_,.ruby .hljs-property{color:#8eccdd}.diff .hljs-meta,.hljs-keyword,.hljs-template-tag,.hljs-type{color:#b98eb2}.hljs-emphasis{color:#b98eb2;font-style:italic}.hljs-meta,.hljs-meta .hljs-keyword,.hljs-meta .hljs-string{color:#8b6c37}.hljs-meta .hljs-keyword,.hljs-meta-keyword{font-weight:700}
+*/pre code.hljs{display:block;overflow-x:auto;padding:1em}code.hljs{padding:3px 5px}.hljs{color:#abb2bf;background:#282c34}.hljs ::selection,.hljs::selection{background-color:#3e4451;color:#abb2bf}.hljs-comment{color:#545862}.hljs-tag{color:#565c64}.hljs-operator,.hljs-punctuation,.hljs-subst{color:#abb2bf}.hljs-operator{opacity:.7}.hljs-bullet,.hljs-deletion,.hljs-name,.hljs-selector-tag,.hljs-template-variable,.hljs-variable{color:#e06c75}.hljs-attr,.hljs-link,.hljs-literal,.hljs-number,.hljs-symbol,.hljs-variable.constant_{color:#d19a66}.hljs-class .hljs-title,.hljs-title,.hljs-title.class_{color:#e5c07b}.hljs-strong{font-weight:700;color:#e5c07b}.hljs-addition,.hljs-code,.hljs-string,.hljs-title.class_.inherited__{color:#98c379}.hljs-built_in,.hljs-doctag,.hljs-keyword.hljs-atrule,.hljs-quote,.hljs-regexp{color:#56b6c2}.hljs-attribute,.hljs-function .hljs-title,.hljs-section,.hljs-title.function_,.ruby .hljs-property{color:#61afef}.diff .hljs-meta,.hljs-keyword,.hljs-template-tag,.hljs-type{color:#c678dd}.hljs-emphasis{color:#c678dd;font-style:italic}.hljs-meta,.hljs-meta .hljs-keyword,.hljs-meta .hljs-string{color:#be5046}.hljs-meta .hljs-keyword,.hljs-meta-keyword{font-weight:700}
 }
 .highlight:hover .copy-btn,
 pre:hover .copy-btn {
