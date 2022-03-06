@@ -60,7 +60,7 @@
 <p>打开网站根目录下 <code>_config.yml</code> ，修改最后的内容：</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line">  repo: git@github.com:UserName/name.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
 <p>其中，<code>repo</code> 后的链接替换为：<code>Github -&gt; 仓库页面 -&gt; Clone or Download -&gt; Use SSH -&gt; 文本框内容</code>，如下图：</p>
-<p><img src="https://i.loli.net/2020/04/20/YeBSHcVouyMtxKl.png" alt></p>
+<p><img src="https://i.loli.net/2020/04/20/YeBSHcVouyMtxKl.png" alt=""></p>
 <ul>
 <li>部署<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo generate</span><br><span class="line">hexo deploy</span><br></pre></td></tr></table></figure>
 其中 <code>generate</code> 和 <code>deploy</code> 可以用 <code>g</code> 和 <code>d</code> 代替</li>
@@ -76,6 +76,43 @@
         <tag>Hexo</tag>
         <tag>Github</tag>
         <tag>Blog</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>在自己的服务器上部署Hexo</title>
+    <url>/%E5%9C%A8%E8%87%AA%E5%B7%B1%E7%9A%84%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E9%83%A8%E7%BD%B2Hexo.html</url>
+    <content><![CDATA[<p>此前写了一篇 <a href="Windows-下使用-Github-搭建免费个人博客.html">Windows 下使用 Github 搭建免费个人博客</a> 的文章，但是在国内使用 Github Pages 的体验实在是一般，而 Gitee Pages 的自动化部署又需要付费，因此参考网上资料，通过在自己的服务器上搭建 Git 服务并在 Virtualmin 的环境下开启 Web 服务。</p>
+<a id="more"></a>
+<h1 id="1-服务器端操作"><a href="#1-服务器端操作" class="headerlink" title="1. 服务器端操作"></a>1. 服务器端操作</h1><h2 id="1-1-Virtualmin-新建虚拟服务器"><a href="#1-1-Virtualmin-新建虚拟服务器" class="headerlink" title="1.1 Virtualmin 新建虚拟服务器"></a>1.1 Virtualmin 新建虚拟服务器</h2><p>打开 Virtualmin 后台 - Create Virtual Server，在 Domain name 中填入博客的网址，如 <code>blog.kylechoy.top</code>。</p>
+<p><img src="%E5%9C%A8%E8%87%AA%E5%B7%B1%E7%9A%84%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E9%83%A8%E7%BD%B2Hexo/2022-03-06-17-49-30.png" alt="Virtualmin配置"></p>
+<h2 id="1-2-配置-Git"><a href="#1-2-配置-Git" class="headerlink" title="1.2. 配置 Git"></a>1.2. 配置 Git</h2><h3 id="1-2-1-配置-SSH-密钥"><a href="#1-2-1-配置-SSH-密钥" class="headerlink" title="1.2.1 配置 SSH 密钥"></a>1.2.1 配置 SSH 密钥</h3><p>使用 SSH 登录服务器，并切换到虚拟服务器的用户。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">su blog</span><br><span class="line"><span class="comment"># 如果新建虚拟服务器时没有自定义用户名，那么会选择网址的第一部分作为用户名。</span></span><br><span class="line"><span class="comment"># 假设网址为 blog.kylechoy.top，则默认新建用户 blog。</span></span><br></pre></td></tr></table></figure>
+<p>配置 SSH</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">mkdir ~/.ssh</span><br><span class="line">touch ~/.ssh/authorized_keys</span><br><span class="line">chmod 600 ~/.ssh/authorzied_keys <span class="comment"># 权限设置非常重要，不可忽略</span></span><br><span class="line">chmod 700 ~/.ssh <span class="comment"># 权限设置非常重要，不可忽略</span></span><br><span class="line">vim ~/.ssh/authorzied_keys <span class="comment"># 将SSH公钥粘贴进去</span></span><br></pre></td></tr></table></figure>
+<p>如何生成 SSH 公钥可查看 <a href="Windows-下使用-Github-搭建免费个人博客.html#2-生成SSH密钥并添加到GitHub">Windows 下使用 Github 搭建免费个人博客</a>。</p>
+<h3 id="1-2-2-配置-Git-仓库"><a href="#1-2-2-配置-Git-仓库" class="headerlink" title="1.2.2 配置 Git 仓库"></a>1.2.2 配置 Git 仓库</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cd</span> ~</span><br><span class="line">git init --bare blog.git <span class="comment"># 在当前目录创建一个叫做 blog.git 的仓库，会新建一个 blog.git 文件夹</span></span><br><span class="line">vim blog.git/hooks/post-update <span class="comment"># 使用 git-hooks 实现自动部署</span></span><br></pre></td></tr></table></figure>
+<p><code>post-update</code> 内容如下，work-tree 为 Virtualmin 虚拟服务器存放网页的文件夹：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line">git --work-tree=/home/blog/public_html --git-dir=/home/blog/blog.git checkout -f</span><br></pre></td></tr></table></figure>
+<p>给 post-update 授权：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">chmod +x blog.git/hooks/post-update</span><br></pre></td></tr></table></figure>
+<h1 id="2-本地配置"><a href="#2-本地配置" class="headerlink" title="2. 本地配置"></a>2. 本地配置</h1><p>参考 <a href="Windows-下使用-Github-搭建免费个人博客.html#3-将-Hexo-部署到GitHub">Windows-下使用-Github-搭建免费个人博客</a> 安装 Hexo。</p>
+<p>安装 deploy-git：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+<p>打开 <code>_config.yml</code> 文件，找到 <code>deploy</code> 并将 <code>repo</code> 修改为 <code>用户名@服务器网址:/git仓库路径</code>，如：</p>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">'git'</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">blog@kylechoy.top:/home/blog/blog.git</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
+<p>如果需要部署到多个服务器，参考格式为：</p>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">'git'</span></span><br><span class="line">  <span class="attr">repo:</span> </span><br><span class="line">    <span class="attr">server:</span> <span class="string">blog@kylechoy.top:/home/blog/blog.git</span></span><br><span class="line">    <span class="attr">github:</span> <span class="string">git@github.com:KyleChoy/kylechoy.github.io.git</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
+<p>部署到服务器：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo clean <span class="comment"># 清除缓存</span></span><br><span class="line">hexo g <span class="comment"># 生成静态文件，g可替换为generate</span></span><br><span class="line">hexo d <span class="comment"># 配置到服务器，d可替换为deploy</span></span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>Blog</tag>
+        <tag>Git</tag>
+        <tag>Server</tag>
+        <tag>Virtualmin</tag>
       </tags>
   </entry>
 </search>
