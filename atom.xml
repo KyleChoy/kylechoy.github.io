@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>菜头的博客</title>
+  <icon>https://kylechoy.github.io/images/logo.svg</icon>
+  
+  <link href="https://kylechoy.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://kylechoy.github.io/"/>
+  <updated>2022-03-06T10:51:10.000Z</updated>
+  <id>https://kylechoy.github.io/</id>
+  
+  <author>
+    <name>Kyle</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>在自己的服务器上部署Hexo</title>
+    <link href="https://kylechoy.github.io/%E5%9C%A8%E8%87%AA%E5%B7%B1%E7%9A%84%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E9%83%A8%E7%BD%B2Hexo.html"/>
+    <id>https://kylechoy.github.io/%E5%9C%A8%E8%87%AA%E5%B7%B1%E7%9A%84%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E9%83%A8%E7%BD%B2Hexo.html</id>
+    <published>2022-03-06T10:51:10.000Z</published>
+    <updated>2022-03-06T10:51:10.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;此前写了一篇 &lt;a href=&quot;Windows-%E4%B8%8B%E4%BD%BF%E7%94%A8-Github-%E6%90%AD%E5%BB%BA%E5%85%8D%E8%B4%B9%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2.html&quot;&gt;Windows 下使用 Github 搭建免费个人博客&lt;/a&gt; 的文章，但是在国内使用 Github Pages 的体验实在是一般，而 Gitee Pages 的自动化部署又需要付费，因此参考网上资料，通过在自己的服务器上搭建 Git 服务并在 Virtualmin 的环境下开启 Web 服务。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="网站" scheme="https://kylechoy.github.io/categories/%E7%BD%91%E7%AB%99/"/>
+    
+    
+    <category term="Hexo" scheme="https://kylechoy.github.io/tags/Hexo/"/>
+    
+    <category term="Blog" scheme="https://kylechoy.github.io/tags/Blog/"/>
+    
+    <category term="Git" scheme="https://kylechoy.github.io/tags/Git/"/>
+    
+    <category term="Server" scheme="https://kylechoy.github.io/tags/Server/"/>
+    
+    <category term="Virtualmin" scheme="https://kylechoy.github.io/tags/Virtualmin/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Windows 下使用 Github 搭建免费个人博客</title>
+    <link href="https://kylechoy.github.io/Windows-%E4%B8%8B%E4%BD%BF%E7%94%A8-Github-%E6%90%AD%E5%BB%BA%E5%85%8D%E8%B4%B9%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2.html"/>
+    <id>https://kylechoy.github.io/Windows-%E4%B8%8B%E4%BD%BF%E7%94%A8-Github-%E6%90%AD%E5%BB%BA%E5%85%8D%E8%B4%B9%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2.html</id>
+    <published>2020-04-13T14:25:03.000Z</published>
+    <updated>2020-04-13T14:25:03.000Z</updated>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;Hexo-简介&quot;&gt;&lt;a href=&quot;#Hexo-简介&quot; class=&quot;headerlink&quot; title=&quot;Hexo 简介&quot;&gt;&lt;/a&gt;Hexo 简介&lt;/h3&gt;&lt;p&gt;Hexo是一款基于Node.js的快速、简洁且高效的博客框架，依赖少易于安装使用，可以方便的生成静态网页托管在 GitHub 上，支持 Markdown。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="网站" scheme="https://kylechoy.github.io/categories/%E7%BD%91%E7%AB%99/"/>
+    
+    
+    <category term="Hexo" scheme="https://kylechoy.github.io/tags/Hexo/"/>
+    
+    <category term="Github" scheme="https://kylechoy.github.io/tags/Github/"/>
+    
+    <category term="Blog" scheme="https://kylechoy.github.io/tags/Blog/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>我的Hexo博客</title>
+    <link href="https://kylechoy.github.io/%E6%88%91%E7%9A%84Hexo%E5%8D%9A%E5%AE%A2.html"/>
+    <id>https://kylechoy.github.io/%E6%88%91%E7%9A%84Hexo%E5%8D%9A%E5%AE%A2.html</id>
+    <published>2020-04-13T07:06:07.000Z</published>
+    <updated>2020-04-13T07:06:07.000Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;Hello-World&quot;&gt;&lt;a href=&quot;#Hello-World&quot; class=&quot;headerlink&quot; title=&quot;Hello World&quot;&gt;&lt;/a&gt;Hello World&lt;/h2&gt;&lt;p&gt;这里是利用 &lt;strong&gt;Github Pages&lt;/strong&gt; 生成的博客网站，由 &lt;strong&gt;Hexo&lt;/strong&gt; 驱动，采用 &lt;strong&gt;Next&lt;/strong&gt; 主题。&lt;/p&gt;
+&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;print&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&amp;quot;Hello World!&amp;quot;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    <category term="关于" scheme="https://kylechoy.github.io/categories/%E5%85%B3%E4%BA%8E/"/>
+    
+    
+    <category term="META" scheme="https://kylechoy.github.io/tags/META/"/>
+    
+  </entry>
+  
+</feed>
